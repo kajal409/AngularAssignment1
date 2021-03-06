@@ -1,11 +1,19 @@
 <div class="toolbar" role="banner">
+  <!--interpolation-->
   <h1 [style.color]="'white'">{{title}}</h1>
 </div>
 
+<!--class binding-->
 <div [class.space]="isSpace"> 
   <a href="/login">login</a>
+
+  <!--property biniding in value and style binding in color-->
   <p>Company Name : <input [value]='companyName' [style.color]="foreColor" [disabled]='isUnchanged'/></p>
+
+  <!--interpolation expression-->
   <p>Sum is {{1+2}}</p>
+
+  <!--pipe : date and uppercase-->
   <p>Date : {{dob | date:"MM/dd/yy" | uppercase }}</p>
 </div>
 
