@@ -7,13 +7,43 @@
 <div [class.space]="isSpace"> 
   <a href="/login">login</a>
 
-  <!--property biniding in value and style binding in color-->
-  <p>Company Name : <input [value]='companyName' [style.color]="foreColor" [disabled]='isUnchanged'/></p>
+  <!--property biniding-->
+  <p>Company Name : <input [value]='companyName' [disabled]='isUnchanged'/></p>
+
+
+  <!--style binding-->
+  <p>Floor : <input [value]='floorNumber' [style.color]="foreColor"/></p>
+
+   
+  <table border="1">
+      <tr>
+        <!--attribute binding-->
+        <th [attr.colspan]="1+2">Third floor</th>
+      </tr>
+      <tr>
+        <td>Desk 1</td>
+        <td>Desk 2</td>
+        <td>Desk 3</td>
+      </tr>
+      <tr>
+          <td>Desk 4</td>
+          <td>Desk 5</td>
+          <td>Desk 6</td>
+      </tr>
+     
+  </table>
 
   <!--interpolation expression-->
-  <p>Sum is {{1+2}}</p>
+  <p>Total desk : {{3+3}}</p>
 
   <!--pipe : date and uppercase-->
-  <p>Date : {{dob | date:"MM/dd/yy" | uppercase }}</p>
+  <p>Date : {{currentDate | date | uppercase }}</p>
+
+  <!--event binding-->
+  <button (mouseover)="changeText=true" (mouseout)="changeText=false">
+      <span style="color: green;" *ngIf="!changeText">Check In</span>
+      <span style="color: red;" *ngIf="changeText">Check Out</span>
+  </button>
+
 </div>
 

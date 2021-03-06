@@ -1,4 +1,5 @@
 import { Component } from '@angular/core';
+import { DatePipe } from '@angular/common';
 
 @Component({
   selector: 'app-root',
@@ -10,7 +11,13 @@ export class AppComponent {
   companyName = 'Gateway Group';
   isUnchanged = true;
   isSpace = 'true';
-  foreColor = 'green';
-  dob = new Date(2020,5,2);
+  foreColor = 'coral';
+  floorNumber = '3rd'
+  currentDate = new Date();
   imageUrl = '../assets/b1.png'
+
+  changeText: boolean;
+    constructor() {
+       this.changeText = false;
+    }
 }
