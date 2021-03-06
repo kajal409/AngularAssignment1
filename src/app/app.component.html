@@ -4,9 +4,8 @@
 
 <div [class.space]="isSpace"> 
   <a href="/login">login</a>
-  <p>Company Name : <input [value]='companyName' [disabled]='isUnchanged'/></p>
+  <p>Company Name : <input [value]='companyName' [style.color]="foreColor" [disabled]='isUnchanged'/></p>
   <p>Sum is {{1+2}}</p>
   <p>Date : {{dob | date:"MM/dd/yy" | uppercase }}</p>
-  <button [disabled]="isUnchanged">Disabled Button</button>
 </div>
 

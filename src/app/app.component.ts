@@ -8,8 +8,9 @@ import { Component } from '@angular/core';
 export class AppComponent {
   title = 'Assignment 1';
   companyName = 'Gateway Group';
-  isSpace = 'true;'
-  dob = new Date(2020,5,2);
   isUnchanged = true;
+  isSpace = 'true';
+  foreColor = 'green';
+  dob = new Date(2020,5,2);
   imageUrl = '../assets/b1.png'
 }
