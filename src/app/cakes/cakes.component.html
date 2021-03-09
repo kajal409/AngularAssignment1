@@ -1,0 +1,38 @@
+<html>
+    <head>
+        <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" crossorigin="anonymous">
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+        <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js" crossorigin="anonymous"></script>
+
+    </head>
+
+    <body>
+
+        <h2>Cakes</h2>
+
+        <table clas="table table-striped">
+            <thead>
+                <tr>
+                    <th>ID</th>
+                    <th>Name</th>
+                    <th>Price</th>
+                </tr>                  
+            </thead>
+
+            <tbody>
+                <tr>
+
+                <h5 *ngFor="let cake of cakes">
+                    <td>{{cake.id}}</td>
+                    <td>{{cake.name}}</td>
+                    <td>{{cake.price}}</td>
+                </h5>
+        
+                </tr>
+            </tbody>
+
+        </table>
+
+    </body>
+</html>
+
