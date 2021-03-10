@@ -19,6 +19,7 @@ export class AppComponent implements AfterViewInit {
 
   ngAfterViewInit(){
     this.proCmp.floorNumber = '4th';
+    //this.prCmp.companyName = 'TCS';
   }
 
 }
