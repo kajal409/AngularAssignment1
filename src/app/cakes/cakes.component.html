@@ -10,29 +10,12 @@
 
         <h2>Cakes</h2>
 
-        <table clas="table table-striped">
-            <thead>
-                <tr>
-                    <th>ID</th>
-                    <th>Name</th>
-                    <th>Price</th>
-                </tr>                  
-            </thead>
-
-            <tbody>
-                <tr>
-
-                <h5 *ngFor="let cake of cakes">
-                    <td>{{cake.id}}</td>
-                    <td>{{cake.name}}</td>
-                    <td>{{cake.price}}</td>
-                </h5>
-        
-                </tr>
-            </tbody>
-
-        </table>
-
+        <h6 *ngFor="let cake of cakes">
+            <span>{{cake.id}}</span>|
+            <span>{{cake.name}}</span>|
+            <span>{{cake.price}}</span>
+        </h6>
+    
     </body>
 </html>
 
